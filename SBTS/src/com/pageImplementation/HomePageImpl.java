@@ -1,0 +1,44 @@
+package com.pageImplementation;
+
+import static org.testng.Assert.assertEquals;
+
+import com.page.HomePage;
+import com.pageImpl.base.BasePageImpl;
+import com.utils.PageRequisites;
+public class HomePageImpl extends BasePageImpl implements HomePage {
+
+	private static final String HOME_PAGE = "HomePage";
+
+	public HomePageImpl(PageRequisites pageRequisites) {
+		super(pageRequisites);
+	}
+
+	/**
+	 * Verify the title
+	 */
+	@Override
+	public void verifyTitle() {
+		String actualTitle = driver.getTitle();
+		assertEquals(
+				actualTitle,
+				"Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more");
+	}
+
+
+	/**
+	 * Click on Signing button
+	 */
+	@Override
+	public void clickSignIn() {
+		genericMethods.clickElement(signin, HOME_PAGE);
+	}
+
+	/**
+	 * returns Page Name
+	 */
+	@Override
+	public String getPageName() {
+		return "HomePage";
+	}
+
+}

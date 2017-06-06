@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<pageElements>
+
+	<page name="LoginPage">
+	    <element name="myAccount" Descriptor="xpath" value="//div[@class='userorlogin']"/>
+		<element name="userName" Descriptor="id" value="email" />
+		<element name="password" Descriptor="id" value="password" />
+		<element name="login" Descriptor="id" value="login_submit" />
+	</page>
+	
+	
+	
+	<page name="HomePage">
+		<element name="signin" Descriptor="XPATH" value="//*[@id='nav-link-accountList']/span[1]" />
+		<element name="title" Descriptor="tagName" value="Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs '&amp;' more" />
+	</page>
+	
+	
+	
+	
+<page name="RegisterPage">
+	<element name="myAccount" descriptor="xpath" value="//div[@class='userorlogin']"/>
+	<element name="signup" descriptor="xpath" value="//a[contains(text(),'Sign Up')]"/>	
+	<element name="name" descriptor="name" value="first_name"/>	
+	<element name="mobile" descriptor="xpath" value="//input[@placeholder='Mobile']"/>	
+	<element name="email" descriptor="xpath" value="//input[@placeholder='Email']"/>	
+	<element name="password" descriptor="xpath" value=".//*[@id='register_user_form']/div[4]/input"/>	
+	<element name="retypePassword" descriptor="xpath" value=".//*[@id='register_user_form']/div[5]/input"/>	
+	<element name="terms" descriptor="id" value="register_tc"/>	
+	<element name="register" descriptor="id" value="register_user_button"/>	
+</page>
+	
+	
+	
+	<page name="MakeMyTripPage">
+		<element name="fromTextBox" Descriptor="ID" value="from"  />
+		
+		<element name="fromCity" Descriptor="xpath" value="//ul[@id='ui-id-1']/li[15]/a" />
+		<element name="toTextBox" Descriptor="ID" value="to"  />
+		<element name="toCity" Descriptor="xpath" value="//ul[@id='ui-id-2']/li[3]/a" />
+		<element name="date" Descriptor="xpath" value=" //input[@id='flight_datepicker1']" />  
+		 <element name="departureDate" Descriptor="xpath" value=" .//*[@id='ui-datepicker-div']/div[1]/table/tbody/tr[3]/td[4]/a " /> 
+		 <element name="travelers" Descriptor="xpath" value=" .//span[contains(text(),'Traveller(s)')] " /> 
+		 
+		 <element name="adultPlus" Descriptor="xpath" value="//button[@data-field='adult' and @data-type='plus']" />
+		 <element name="childtPlus" Descriptor="xpath" value="//button[@data-field='child' and @data-type='plus']" />
+		 <element name="infantPlus" Descriptor="xpath" value="//button[@data-field='infant' and @data-type='plus']" /> 
+		 
+		 <element name="adultMinus" Descriptor="xpath" value="//button[@data-field='adult' and @data-type='minus']" />
+		 <element name="childtMinus" Descriptor="xpath" value="//button[@data-field='child' and @data-type='minus']" />
+		 <element name="infantMinus" Descriptor="xpath" value="//button[@data-field='infant' and @data-type='minus']" />
+		  
+		 <element name="advanceOptions" Descriptor="xpath" value="//div[contains(text(),'Advanced options')]"/> 
+		 
+		 <element name="airlineClass" Descriptor="ID" value="choosen_airline_class"/>
+		 <element name="airlineClassOption" Descriptor="xpath" value=".//*[@id='flight_form']/div/div/div[8]/div/div[2]/div[1]/div/div/div/div/a[2]" />
+		 
+		 <element name="airlines" Descriptor="ID" value="choosen_preferred_airline"/>
+	     <element name="airlinesOption" Descriptor="xpath" value="//a[@data-airline_code=''] "/>
+	     <element name="totalFlight" Descriptor="xpath" value="//strong[@id='total_records']"/> 
+	     
+		 
+		<element name="searchBtn" Descriptor="ID" value="flight-form-submit"  />
+		
+	</page>
+
+</pageElements>

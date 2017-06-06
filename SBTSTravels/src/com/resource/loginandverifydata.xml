@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<RecordType>
+
+	<page name="LoginPage">
+		<record id="TC001" userName="anna15feb@gmail.com"  password ="anna15feb" />
+		<record id="TC002" userName="abc"  password ="bcd" />
+		<record id="TC003"  userName="mahananda.provab@gmail.com" password="admin@123"/>
+	</page>
+	
+	<page name="RegisterPage" >
+         <record id="TC004" name="uday" mobile="9900664716" email="uday.provab@gmail.com" password="admin@123" retypePassword="admin@123"/>	
+	</page>
+	
+	
+	
+	<page name="MakeMyTripPage">	
+		<record id="TC001" fromTextBox="Bangalore"  toTextBox="Hyderabad"  date="6-6-2017" adultPlus="2" childPlus="2" infantPlus="2" airlineClassOption="Economy" airlinesOption="All"/>
+	</page>
+	
+	<page name="HomePage">
+		<record id="TC001" title="Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs '&amp;' more" />
+	</page>
+	
+	
+	
+</RecordType>
