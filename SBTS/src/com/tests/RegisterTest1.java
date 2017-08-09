@@ -12,8 +12,6 @@ import com.utils.PageRequisites;
 
 public class RegisterTest1 extends RegisterTestModule
 
-
-
 {
 	 
 	@BeforeMethod

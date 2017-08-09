@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="40623" started-at="2017-06-06T06:16:41Z" finished-at="2017-06-06T06:17:22Z">
+  <suite name="Default suite" duration-ms="28697" started-at="2017-06-09T11:20:56Z" finished-at="2017-06-09T11:21:25Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="40623" started-at="2017-06-06T06:16:41Z" finished-at="2017-06-06T06:17:22Z">
+    <test name="Default test" duration-ms="28697" started-at="2017-06-09T11:20:56Z" finished-at="2017-06-09T11:21:25Z">
       <class name="com.tests.OnewayTest">
-        <test-method status="PASS" signature="initialise()[pri:0, instance:com.tests.OnewayTest@d62f43]" name="initialise" is-config="true" duration-ms="4731" started-at="2017-06-06T11:46:41Z" finished-at="2017-06-06T11:46:46Z">
+        <test-method status="PASS" signature="initialise()[pri:0, instance:com.tests.OnewayTest@d62f43]" name="initialise" is-config="true" duration-ms="4865" started-at="2017-06-09T16:50:56Z" finished-at="2017-06-09T16:51:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialise -->
-        <test-method status="PASS" signature="loginAndVerifyTitle()[pri:0, instance:com.tests.OnewayTest@d62f43]" name="loginAndVerifyTitle" duration-ms="34424" started-at="2017-06-06T11:46:46Z" finished-at="2017-06-06T11:47:20Z">
+        <test-method status="PASS" signature="loginAndVerifyTitle()[pri:0, instance:com.tests.OnewayTest@d62f43]" name="loginAndVerifyTitle" duration-ms="22432" started-at="2017-06-09T16:51:01Z" finished-at="2017-06-09T16:51:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAndVerifyTitle -->
-        <test-method status="PASS" signature="closeInstance()[pri:0, instance:com.tests.OnewayTest@d62f43]" name="closeInstance" is-config="true" duration-ms="1410" started-at="2017-06-06T11:47:21Z" finished-at="2017-06-06T11:47:22Z">
+        <test-method status="PASS" signature="closeInstance()[pri:0, instance:com.tests.OnewayTest@d62f43]" name="closeInstance" is-config="true" duration-ms="1349" started-at="2017-06-09T16:51:23Z" finished-at="2017-06-09T16:51:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeInstance -->

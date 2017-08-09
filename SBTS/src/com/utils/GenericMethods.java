@@ -210,6 +210,31 @@ public class GenericMethods {
 	 * @param pageName
 	 * @return
 	 */
+	public List<WebElement> getElements(String elementName, String pageName) {
+		String locator = locatorMap.get(pageName).get(elementName);
+		String locatorValue = locatorValuesMap.get(pageName).get(elementName);
+
+		if(waitForPageLoad()){
+
+			if ("ID".equalsIgnoreCase(locator)) {
+				return driver.findElements(ById.id(locatorValue));
+			} else if ("XPATH".equalsIgnoreCase(locator)) {
+				return driver.findElements(ById.xpath(locatorValue));
+			} else if ("tagName".equalsIgnoreCase(locator)) {
+				return driver.findElements(ById.tagName(locatorValue));
+			} else if ("className".equalsIgnoreCase(locator)) {
+				return driver.findElements(ByClassName.className(locatorValue));
+			} else if ("LinkText".equalsIgnoreCase(locator)) {
+				return driver.findElements(ByLinkText.linkText(locatorValue));
+			} else if ("cssSelector".equalsIgnoreCase(locator)) {
+				return driver.findElements(ByCssSelector.cssSelector(locatorValue));
+
+			}
+		}
+
+		return null;
+	}
+
 
 	public WebElement getElement(String elementName, String pageName) {
 		String locator = locatorMap.get(pageName).get(elementName);
@@ -831,6 +856,18 @@ public class GenericMethods {
 		}
 
 		return true;
+	}
+	
+	
+	public void totalSearchResults(String elementName, String pageName)
+	{
+		List<WebElement> elements = getElements(elementName, pageName);
+		
+       int size=elements.size();
+       log.info("total number of search  result are"+size);
+       
+       
+	
 	}
 
 	/**
